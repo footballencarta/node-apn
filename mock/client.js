@@ -8,6 +8,8 @@ module.exports = function() {
   Client.prototype.write = function mockWrite(notification, device) {
     return { device };
   };
+  
+  Client.prototype.shutdown = function() {};
 
   return Client;
 };
